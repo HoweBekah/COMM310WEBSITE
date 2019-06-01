@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+html {
+  margin: auto;
+  width: 80%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: auto;
+  text-align: center;
+  background-color: #f8ffb0;
+  /* Set the default font size for the body text below this comment. Reference the screenshot to know what size to make this text. Use "em" for font size. */
+}
+#browntop {
+  height: 77px;
+  background-color: #52471b;
+  border-bottom: 0.25em solid #87752d;
+  box-shadow: 0 0.1em 0.25em #52471b;
+}
+header {
+  background-color: #f2cc10;
+}
+#logotagline {
+  margin-top: -50px;
+}
+header h1 {
+  font-size: 1em;
+  color: #87752d;
+  margin-top: 0;
+}
+#picgallery {
+  display: inline-block;
+  margin: auto;
+  margin-top: 3rem;
+}
+figure {
+  color: #f8ffb0;
+  background-color: #87752d;
+  margin: 0.25em;
+  padding: 0.5em;
+  border-radius: 10px;
+  float: left;
+}
+figcaption {
+  font-weight: bold;
+}
+blockquote {
+  clear: both;
+  width: 50%;
+  color: #52471b;
+  font-size: 1.5em;
+  margin: auto;
+  margin-top: 1.5em;
+  margin-bottom: 3em;
+  font-weight: bold;
+}
+
+nav {
+  border-top: 0.15em solid #52471b;
+  border-bottom: 0.15em solid #52471b;
+  background-color: #87752d;
+}
+ul {
+  list-style-type: none;
+}
+.table {
+  display: table;
+  margin: auto;
+}
+
+ul li {
+  padding: 0.75em;
+  float: left;
+}
+ul a {
+  font-size: 1.25em;
+  text-decoration: none;
+  color: #f8ffb0;
+}
+footer {
+  color: #f2cc10;
+  background-color: #52471b;
+  border-top: 0.25em solid #87752d;
+  padding: 1.5em;
+  font-size: 1em;
+}
