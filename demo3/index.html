@@ -8,21 +8,23 @@
   </head>
 
   <body>
+    <div id="content">
     <header>
         <div id="backtotop"><a href="#logo">Back to top</a></div>
       <img src="images/falconlogo.png" alt="Idaho Falconry Logo" id="logo"/>
 
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li ><a href="index.html">Home</a></li>
           <li><a href="mission.html">Mission</a></li>
           <li><a href="community.html">Community</a></li>
-          <li><a href="events.html">Events</a></li>
+          <li id="leftborder"><a href="events.html">Events</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <img src="images/falconinflight.jpg" alt="falcon in flight" />
+      <div id="maincontent">
+      <img src="images/falconinflight.jpg" alt="falcon in flight" id="falconpic"/>
       <div id="falconinfo">
         <section id="overview">
           <h2>An Overview</h2>
@@ -60,23 +62,31 @@
           <a href="#">read more...</a>
         </section>
       </div>
+    </div>
     </main>
+    
     <footer>
 <div id="contact">
+
+  <div id="phonediv">
 <p>(208) 490-3450</p>
-<img src="images/phoneicon.png" alt="phone icon">
+<img src="images/phoneicon.png" alt="phone icon" id="phone"></div>
+
+<div id="letterdiv">
 <p><a href="mailto:contact@idahofalconry.com">contact@idahofalconry.com</a></p>
-<img src="images/lettericon.png" alt="envelope icon">
+<img src="images/lettericon.png" alt="envelope icon" id="letter"></div>
+
+<div id="homediv">
     <p>742 N. 1st W, Springfield ID, 83440</p>
-<img src="images/homeicon.png" alt="home icon">
+<img src="images/homeicon.png" alt="home icon" id="home"></div>
 </div>
         <div id="foot">
       <p>
         All content &copy;Idaho Falconry. </br> Text is
         available under the </br> CC Attribution-ShareAlike License.
       </p>
-</div>
-      
+        </div>
     </footer>
+  </div>
   </body>
 </html>
