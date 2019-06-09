@@ -34,22 +34,6 @@ body {
   text-decoration: none;
   color: #ffffff;
 }
-header h1 {
-  color: #ffffff;
-  font-size: 1em;
-  margin-left: 107px;
-  margin-top: -18px;
-  margin-bottom: 20px;
-}
-/*header img {
-  margin-left: -100px;
-}*/
-main {
-  padding: 30px;
-  background-color: #e7d79b;
-  border-right: 2px solid #000000;
-  border-left: 2px solid #000000;
-}
 
 h1,
 h2,
@@ -102,7 +86,9 @@ header nav li > a:active {
 main {
   background-color: #212224;
   color: #ffffff;
+  display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 #maincontent {
