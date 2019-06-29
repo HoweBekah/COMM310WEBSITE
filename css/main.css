@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Varela+Round&display=swap");
+
+html {
+  background-color: #75967a;
+  color: #fff7cc;
+}
+
+body {
+  width: 75%;
+  margin: auto;
+  font-family: "Varela Round", sans-serif;
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nanum Pen Script", cursive;
+}
+
+header {
+  background-color: #fff7cc;
+  color: #0699dd;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#logo {
+  margin-top: 1.5em;
+  border: 1em solid #75967a;
+  border-radius: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav {
+  display: inline-block;
+  background-color: #0699dd;
+  position: relative;
+  top: 1.5em;
+  border-radius: 10px;
+  padding: 0;
+  margin-bottom: 0;
+  border-left: 0.75em solid #0699dd;
+  border-right: 0.75em solid #0699dd;
+}
+
+#navul li.current {
+  background-color: #75967a;
+}
+
+header h2 {
+  margin-bottom: 0;
+  margin-top: 0.5em;
+}
+
+#navul {
+  display: inline-flex;
+  padding: 0;
+  margin: 0 auto;
+  font-size: 1.25em;
+}
+
+#navul li {
+  float: left;
+  padding: 0.65em 1em;
+  border-right: 0.25em solid #75967a;
+}
+
+#navul li:hover {
+  background-color: #eb6558;
+}
+
+#navul li:last-child {
+  border-right: none;
+}
+
+#navul li a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff7cc;
+}
+
+input[type="search"] {
+  font-size: 1.25em;
+  border: 0.25em solid #0699dd;
+}
+
+input[type="submit"] {
+  margin: 0;
+  font-size: 1.25em;
+  background-color: #0699dd;
+  color: #fff7cc;
+  border: none;
+  padding: 0.25em;
+}
+
+#searchbar {
+  margin: 1em;
+  margin-top: 3em;
+  text-align: left;
+}
+
+blockquote {
+  width: 50%;
+  font-family: "Nanum Pen Script", cursive;
+  background-color: #0699dd;
+  font-size: 2em;
+  display: inline-block;
+  padding: 1em;
+  border-radius: 50%;
+  padding-top: 1.9em;
+}
+
+footer {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  background-color: #eb6558;
+  margin-bottom: 0;
+}
+
+#footdiv {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1em;
+  width: 70%;
+}
+
+#footdiv li {
+  padding: 0.2em 0;
+  font-weight: bold;
+}
+
+#footdiv li a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+#footdiv li a:hover {
+  color: #0699dd;
+}
+
+#footdiv li a:active {
+  color: #fff7cc;
+}
+
+#footdiv li a:visited {
+  color: #1c1c1c;
+}
+
+#left {
+  grid-column: 1;
+  text-align: right;
+}
+
+#right {
+  grid-column: 2;
+  text-align: left;
+  padding-left: 0;
+}

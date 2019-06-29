@@ -3,16 +3,16 @@
 /* --------------------------------------------- */
 /* These are the colors of the boxes under the Branding section */
 #swatch1 {
-  background-color: #000;
+  background-color: #fff7cc;
 }
 #swatch2 {
-  background-color: #444;
+  background-color: #0699dd;
 }
 #swatch3 {
-  background-color: #888;
+  background-color: #eb6558;
 }
 #swatch4 {
-  background-color: #aaa;
+  background-color: #75967a;
 }
 
 /* ----------------------------------------------------- */
@@ -20,8 +20,10 @@
 /* ----------------------------------------------------- */
 /* These are the font families of all the headings and body copy */
 
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Varela+Round&display=swap");
+
 body {
-  font-family: ;
+  font-family: "Varela Round", sans-serif;
 }
 
 h1,
@@ -30,7 +32,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: ;
+  font-family: "Nanum Pen Script", cursive;
 }
 
 /* -------------------------------------------------- */
@@ -40,29 +42,50 @@ h6 {
 
 /* Main Navigation Style */
 #mainnav {
+  text-align: center;
 }
 #mainnav ul {
+  margin: 0;
+  display: inline-block;
+  background-color: #0699dd;
+  list-style-type: none;
+  padding: 0 1em;
+  border-radius: 10px;
 }
 #mainnav li {
+  float: left;
+  padding: 1em 0.75em;
+  border-left: 0.2em solid #fff7cc;
 }
-#mainnav a:link {
-  color: #;
-  /* other styles */
+#mainnav li:last-child {
+  border-right: 0.2em solid #fff7cc;
 }
-#mainnav a:visited {
-  color: #;
-  /* other styles */
-}
-#mainnav a:hover {
-  color: #;
-  /* other styles */
-}
-#mainnav a:active {
-  color: #;
+#mainnav li:hover {
+  background-color: #eb6558;
   /* other styles */
 }
 
-/* Secondary Navigation Style */
+#mainnav a:link {
+  color: #fff7cc;
+  font-size: 1.5em;
+  text-decoration: none;
+  font-family: "Nanum Pen Script", cursive;
+  /* other styles */
+}
+#mainnav a:visited {
+  color: #ffffff;
+  /* other styles */
+}
+#mainnav a:hover {
+  color: #fff7cc;
+  /* other styles */
+}
+#mainnav a:active {
+  color: #ffffff;
+  /* other styles */
+}
+
+/* Secondary Navigation Style 
 #secondnav {
 }
 #secondnav ul {
@@ -71,28 +94,28 @@ h6 {
 }
 #secondnav a:link {
   color: #;
-  /* other styles */
+  
 }
 #secondnav a:visited {
   color: #;
-  /* other styles */
+  
 }
 #maisecondnavnnav a:hover {
   color: #;
-  /* other styles */
+  
 }
 #secondnav a:active {
   color: #;
-  /* other styles */
+  
 }
-
+*/
 /* ----------------------------------- */
 /* --------- HTML Elements ----------- */
 /* ----------------------------------- */
 /* Styling for all HTML Elements */
 
 /* True for all headings */
-h1,
+/*h1,
 h2,
 h3,
 h4,
@@ -102,7 +125,7 @@ h6 {
 }
 
 /* Style for individual headings */
-h1 {
+/*h1 {
 }
 
 h2 {
@@ -121,7 +144,7 @@ h6 {
 }
 
 /* List Styles */
-ul {
+/*ul {
 }
 ul li {
 }
@@ -133,7 +156,7 @@ ol li {
 
 /* Non-Navigational Link Styles */
 /* This is for all default links on your page */
-a:link {
+/*a:link {
 }
 a:visited {
 }
@@ -143,7 +166,7 @@ a:active {
 }
 
 /* This is for secondary link styles (possibly in your footer, etc) */
-.linkstyle2 a:link {
+/*.linkstyle2 a:link {
 }
 .linkstyle2 a:visited {
 }
@@ -154,16 +177,26 @@ a:active {
 
 /* Paragraph Styles */
 p {
-  color: ;
+  color: #0699dd;
   /* Other paragraph styles */
 }
 
 /* Figure and Figcaption Styles */
 figure {
+  width: 25%;
+  text-align: center;
 }
 figure img {
+  width: 100%;
 }
 figcaption {
+  margin: 0;
+  padding: 0.25em;
+  background-color: #eb6558;
+  color: #fff7cc;
+  font-size: 1em;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 /* ------------------------------------- */
