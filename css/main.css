@@ -64,7 +64,7 @@ header h2 {
   display: inline-flex;
   padding: 0;
   margin: 0 auto;
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 #navul li {
@@ -90,32 +90,104 @@ header h2 {
 input[type="search"] {
   font-size: 1.25em;
   border: 0.25em solid #0699dd;
+  padding: 0.25em;
+  width: 15em;
 }
 
-input[type="submit"] {
-  margin: 0;
-  font-size: 1.25em;
-  background-color: #0699dd;
-  color: #fff7cc;
-  border: none;
-  padding: 0.25em;
+input[type="image"]:hover {
+  box-shadow: 0.1em 0.1em 0.25em #1c1c1c;
 }
 
 #searchbar {
+  display: flex;
   margin: 1em;
-  margin-top: 3em;
+  margin-left: 3.5em;
+  margin-top: 3.5em;
   text-align: left;
+  align-items: center;
+}
+
+#mainhome h1 {
+  display: inline-block;
+  background-color: #eb6558;
+  padding: 0.1em 1.5em;
+  border-radius: 50%;
+  font-size: 2.65em;
+  margin-top: 0.5em;
+  letter-spacing: 0.02em;
+}
+
+#mainhome {
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+  width: 90%;
+}
+
+#movies {
+  grid-column: 1;
+}
+
+#tv {
+  grid-column: 2;
+}
+
+#mainhome figure {
+  margin-left: 1em;
+  margin-right: 1.5em;
+  text-align: center;
+  align-self: center;
+  background-color: #eb6558;
+  color: #fff7cc;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+#mainhome figcaption {
+  padding: 0.35em;
+  padding-top: 0;
+  font-weight: lighter;
+}
+
+#mainhome section {
+  background-color: #fff7cc;
+  color: #0699dd;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  border-radius: 10px;
+  margin-bottom: 2em;
+  text-align: left;
+  font-weight: bold;
+  height: 20.313em;
+}
+
+#mainhome figure {
+  grid-column: 1;
+}
+
+#mainhome ol {
+  font-size: 1.2em;
+  padding: 0.5em;
+  padding-left: 1em;
+  grid-column: 2;
+  overflow: scroll;
+}
+
+#mainhome ol li {
+  padding-bottom: 0.2em;
 }
 
 blockquote {
   width: 50%;
   font-family: "Nanum Pen Script", cursive;
   background-color: #0699dd;
-  font-size: 2em;
+  font-size: 2.25em;
   display: inline-block;
   padding: 1em;
   border-radius: 50%;
   padding-top: 1.9em;
+  margin-top: 0;
 }
 
 footer {
@@ -144,7 +216,7 @@ footer {
 }
 
 #footdiv li a:hover {
-  color: #0699dd;
+  text-shadow: 0.1em 0.1em 0.2em #fff7cc;
 }
 
 #footdiv li a:active {
