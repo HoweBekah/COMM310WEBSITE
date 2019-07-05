@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>TV, Movie Tidbits | Contact</title>
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <div id="logoback">
+            <a href="index.html"><img src="images/tvmovietidbitslogo.jpg" alt="TV, Movie Tidbits Logo" id="logo" /></a>
+        </div>
+        <h2>Your go-to place for fun media facts!</h2>
+        <nav>
+            <ul id="navul">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tv.html">TV</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div id="searchbar">
+        <input type="search" placeholder="Search...">
+        <input type="image" src="images/searchbutton.png" alt="Submit">
+        <!--<input type="submit" value="Search">-->
+    </div>
+    <main>
+        <form id="contactform" action="thankyou.html">
+            <fieldset>
+                <legend>Contact Form</legend>
+                <h4 id="warn">*Indicates a required field.</h4>
+                <p>
+                    <label for="fullname" class="textinput">*Enter Your Full Name:</label>
+                    <input type="text" name="fullname" id="fullname" class="textinput" minlength="5"
+                        pattern="[a-zA-Z]+[ ][a-zA-Z]+" required /><br />
+                </p>
+                <p>
+                    <label for="email" class="textinput">*Enter Your Email:</label>
+                    <input type="email" name="email" id="email" placeholder="jonsmith@demo.com" class="textinput"
+                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required /><br />
+                </p>
+                <p>
+                    <label for="userfav" class="textinput">What is your favorite movie or tv show:</label>
+                    <input type="text" name="userfav" id="userfav" class="textinput" /><br />
+                </p>
+                <p>
+                    <label for="comments" class="textinput">*Questions or Comments:</label>
+                    <textarea name="comments" id="comments" rows="3" cols="30" class="textinput" required></textarea>
+                </p>
+            </fieldset>
+            <input type="submit" name="submit" id="consubmit" />
+
+        </form>
+        <blockquote>"So anyways, let's get down to the nitty gritty."<br> ~Nacho Libre</blockquote>
+    </main>
+    <footer>
+        <div id="footdiv">
+            <div id="left">
+                <ul>
+                    <li>Contact us!</li>
+                    <li>520-254-2354</li>
+                    <li><a href="mailto:tvmovietidbits@gmail.com">tvmovietidbits@gmail.com</a></li>
+                    <li>
+                        <address>6532 E. Broadway Tucson, AZ 85710</address>
+                    </li>
+                </ul>
+            </div>
+            <div id="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/practice/index.html">Practice</a></li>
+                    <li><a href="/styleguide/index.html">Style Guide</a></li>
+                    <li>&copy;TV, Movie Tidbits Inc.</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

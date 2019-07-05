@@ -5,14 +5,17 @@
 #swatch1 {
   background-color: #fff7cc;
 }
+
 #swatch2 {
   background-color: #0699dd;
 }
+
 #swatch3 {
   background-color: #eb6558;
 }
+
 #swatch4 {
-  background-color: #75967a;
+  background-color: #01334A;
 }
 
 /* ----------------------------------------------------- */
@@ -44,6 +47,7 @@ h6 {
 #mainnav {
   text-align: center;
 }
+
 #mainnav ul {
   margin: 0;
   display: inline-block;
@@ -52,14 +56,17 @@ h6 {
   padding: 0 1em;
   border-radius: 10px;
 }
+
 #mainnav li {
   float: left;
   padding: 1em 0.75em;
   border-left: 0.2em solid #fff7cc;
 }
+
 #mainnav li:last-child {
   border-right: 0.2em solid #fff7cc;
 }
+
 #mainnav li:hover {
   background-color: #eb6558;
   /* other styles */
@@ -72,14 +79,17 @@ h6 {
   font-family: "Nanum Pen Script", cursive;
   /* other styles */
 }
+
 #mainnav a:visited {
   color: #ffffff;
   /* other styles */
 }
+
 #mainnav a:hover {
   color: #fff7cc;
   /* other styles */
 }
+
 #mainnav a:active {
   color: #ffffff;
   /* other styles */
@@ -186,9 +196,11 @@ figure {
   width: 25%;
   text-align: center;
 }
+
 figure img {
   width: 100%;
 }
+
 figcaption {
   margin: 0;
   padding: 0.25em;
@@ -213,6 +225,7 @@ body {
 .styleguide {
   font-family: "Courier New", Courier, monospace;
 }
+
 h1.styleguide,
 h2.styleguide,
 h3.styleguide,
@@ -222,6 +235,7 @@ h6.styleguide {
   color: #777;
   font-family: "Courier New", Courier, monospace;
 }
+
 h2.styleguide {
   background-color: #777;
   border-radius: 15px;
@@ -229,6 +243,7 @@ h2.styleguide {
   margin-left: -15px;
   color: white;
 }
+
 p.styleguide {
   color: #777;
   font-family: "Courier New", Courier, monospace;
@@ -238,19 +253,24 @@ section {
   margin-top: -10px;
   margin-bottom: 70px;
 }
+
 .colorgroup {
   float: left;
   width: 170px;
 }
+
 .colorgroup h4 {
   font-size: 0.9em;
 }
+
 .colorgroup p {
   font-size: 0.8em;
 }
+
 .clear {
   clear: both;
 }
+
 .swatches {
   width: 100px;
   height: 100px;

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Varela+Round&display=swap");
 
 html {
-  background-color: #75967a;
+  background-color: #01334A;
   color: #fff7cc;
 }
 
@@ -30,7 +30,7 @@ header {
 
 #logo {
   margin-top: 1.5em;
-  border: 1em solid #75967a;
+  border: 1em solid #01334A;
   border-radius: 20px;
 }
 
@@ -52,7 +52,7 @@ nav {
 }
 
 #navul li.current {
-  background-color: #75967a;
+  background-color: #01334A;
 }
 
 header h2 {
@@ -70,7 +70,7 @@ header h2 {
 #navul li {
   float: left;
   padding: 0.65em 1em;
-  border-right: 0.25em solid #75967a;
+  border-right: 0.25em solid #01334A;
 }
 
 #navul li:hover {
@@ -89,13 +89,14 @@ header h2 {
 
 input[type="search"] {
   font-size: 1.25em;
-  border: 0.25em solid #0699dd;
+  border: 0.24em solid #0699dd;
+  border-right: none;
   padding: 0.25em;
   width: 15em;
 }
 
 input[type="image"]:hover {
-  box-shadow: 0.1em 0.1em 0.25em #1c1c1c;
+  box-shadow: 0.1em 0.1em 0.25em #fff7cc;
 }
 
 #searchbar {
@@ -253,6 +254,7 @@ footer {
   background-color: #eb6558;
   border-radius: 0.5em;
 }
+
 #toptv {
   grid-row: 2;
   background-color: #eb6558;
@@ -267,9 +269,11 @@ footer {
   margin: 1em 0.5em;
   margin-bottom: 1.875em;
 }
+
 figure.divtitle div {
   position: relative;
 }
+
 figure.divtitle div img {
   position: relative;
   width: 100%;
@@ -277,17 +281,17 @@ figure.divtitle div img {
 }
 
 figure.divtitle div .overlay {
-  background-color: #0699dd;
+  background-color: #01334A;
   color: #fff7cc;
   position: absolute;
   top: 0em;
   left: 0em;
   width: 100%;
   height: 100%;
-  vertical-align: middle;
   font-size: 1.5em;
   display: none;
 }
+
 figure.divtitle div:hover .overlay {
   display: block;
 }
@@ -311,7 +315,7 @@ div.aboutmediatitle h4 {
   font-weight: lighter;
 
   margin: 0;
-  text-decoration: underline #0699dd;
+  text-decoration: underline #eb6558;
 }
 
 #meandjett {
@@ -319,6 +323,7 @@ div.aboutmediatitle h4 {
   margin-bottom: 0.5em;
   margin-top: 1em;
 }
+
 #aboutpara {
   text-align: left;
   text-indent: 3em;
@@ -329,10 +334,104 @@ div.aboutmediatitle h4 {
   margin: auto;
   margin-bottom: 3em;
 }
+
 #aboutpara p {
   margin: 0 0 0.5em 0;
 }
 
 #aboutpara p:last-child {
   margin: 0;
+}
+
+#contactform {
+  text-align: center;
+  background-color: #eb6558;
+  border-radius: .5em;
+  width: 65%;
+  margin: auto;
+  font-size: 1.25em;
+  display: table;
+  margin: 2em auto;
+
+}
+
+fieldset {
+  border: none;
+
+}
+
+legend {
+  text-align: center;
+  text-decoration: underline dashed #1c1c1c;
+  font-family: "Nanum Pen Script",
+    cursive;
+  font-size: 2.35em;
+  font-weight: bold;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#contactform .textinput {
+  margin: .3em auto;
+  justify-self: right;
+  display: table-cell;
+  padding: .3em;
+}
+
+
+#contactform label {
+  vertical-align: top;
+  display: table-cell;
+}
+
+input#consubmit {
+  font-size: 1.5em;
+  font-weight: bold;
+  background-color: #fff7cc;
+  color: #0699dd;
+  border: none;
+  box-shadow: .2em .2em .2em #1c1c1c;
+  margin-bottom: .75em;
+  padding: .1em .25em;
+  cursor: pointer;
+}
+
+input#consubmit:hover {
+  background-color: #0699dd;
+  color: #fff7cc;
+}
+
+#contactform p {
+  display: table-row;
+  text-align: left;
+}
+
+#warn {
+  text-align: center;
+  margin-top: 0;
+  font-size: .75em;
+  font-weight: lighter;
+}
+
+#thanks {
+  color: #01334A;
+  background-color: #fff7cc;
+  border-radius: .5em;
+  display: inline-block;
+  padding: .75em;
+  margin: 2em auto;
+}
+
+#thanks:hover {
+  box-shadow: .5em .5em .5em #0699dd;
+}
+
+#thanks h1 {
+  margin-bottom: 0;
+
+}
+
+#thanks h2 {
+  margin-top: 0;
+  color: #0699dd;
 }
