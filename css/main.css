@@ -296,6 +296,10 @@ figure.divtitle div:hover .overlay {
   display: block;
 }
 
+figure.divtitle div div.overlay figcaption {
+  padding: .25em;
+}
+
 div.aboutmediatitle {
   font-size: 2em;
   font-weight: lighter;
@@ -434,4 +438,83 @@ input#consubmit:hover {
 #thanks h2 {
   margin-top: 0;
   color: #0699dd;
+}
+
+#moviesMain,
+#tvMain {
+  display: grid;
+  grid-template-columns: .5fr 2fr 2fr 2fr .5fr;
+  grid-gap: 1em;
+  align-items: center;
+  margin: 2em auto;
+}
+
+#moviesMain section,
+#tvMain section {
+  display: grid;
+  grid-template-rows: 1fr 1.5fr;
+  background-color: #fff7cc;
+  color: #0699dd;
+  border-radius: 1em;
+  padding: .7em;
+  height: 33em;
+}
+
+#moviesMain figure,
+#tvMain figure {
+  border: .5em solid #eb6558;
+  border-radius: 10px;
+  background-color: #eb6558;
+  grid-row: 1;
+}
+
+#moviesMain section:hover,
+#tvMain section:hover {
+  box-shadow: .5em .5em .5em #eb6558;
+}
+
+#moviesMain figcaption,
+#tvMain figcaption {
+
+  font-size: 1.15em;
+}
+
+#moviesMain section ol,
+#tvMain section ol {
+  padding: .5em;
+  padding-left: 1.5em;
+  text-align: left;
+  overflow: scroll;
+  font-weight: bold;
+  grid-row: 2;
+}
+
+
+#moviehead,
+#tvhead {
+  display: inline-block;
+  background-color: #eb6558;
+  padding: 0.1em 1.5em;
+  border-radius: 50%;
+  font-size: 3em;
+  font-weight: lighter;
+  margin-top: 0.5em;
+  letter-spacing: 0.02em;
+  margin-bottom: 0;
+}
+
+#leftarrow {
+  justify-self: right;
+}
+
+#leftarrow,
+#rightarrow {
+  background-color: #eb6558;
+  padding: .5em 1em;
+  border-radius: 50%;
+}
+
+#leftarrow:hover,
+#rightarrow:hover {
+  box-shadow: .25em .25em .5em #fff7cc;
 }
