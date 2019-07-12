@@ -3,122 +3,355 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/main.css" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="css/main.css" />
 
-    <title>TV, Movie Tidbits | TV</title>
-    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
-
+  <title>TV, Movie Tidbits | TV</title>
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+  <script src="display.js"></script>
 </head>
 
 <body>
-    <header>
-        <div id="logoback">
-            <a href="index.html"><img src="images/tvmovietidbitslogo.jpg" alt="TV, Movie Tidbits Logo" id="logo" /></a>
-        </div>
-        <h2>Your go-to place for fun media facts!</h2>
-        <nav>
-            <ul id="navul">
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="tv.html">TV</a></li>
-                <li><a href="movies.html">Movies</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-    </header>
-    <div id="searchbar">
-        <input type="search" placeholder="Search...">
-        <input type="image" src="images/searchbutton.png" alt="Submit">
-        <!--<input type="submit" value="Search">-->
+  <header>
+    <div id="logoback">
+      <a href="index.html"><img src="images/tvmovietidbitslogo.jpg" alt="TV, Movie Tidbits Logo" id="logo" /></a>
     </div>
-    <main>
-        <h1 id="tvhead">TV Shows</h1>
-        <div id="tvMain">
-            <a href="tv.html"><img src="images/leftarrow.png" alt="arrow pointing left" id="leftarrow"></a>
-            <section id="maintv1">
-                <figure class="divtitle">
-                    <div>
-                        <img src="images/criminalminds.jpg" alt="Criminal Minds tv show poster">
-                        <div class="overlay">
-                            <figcaption>Criminal Minds</figcaption>
-                        </div>
-                    </div>
-                </figure>
-                <ol>
-                    <li>The character "Penelope Garcia" was supposed to be in only one episode, but she tested so
-                        positively that she was added to the main cast.</li>
-                    <li>Matthew Gray Gubler does not wear matching socks, because he thinks it's unlucky. In a few of
-                        the episodes, you can see his mismatched socks.</li>
-                    <li>J.J.'s children are played by A.J. Cook's actual children, Mekhai Andersen and Phoenix Anderson.
-                        Thomas Gibson's son Travis Gibson appeared in an episode that he directed. Joe Mantegna's
-                        daughter Gia Mantegna made a few guest appearances.</li>
-                </ol>
-            </section>
-            <section id="maintv2">
-                <figure class="divtitle">
-                    <div>
-                        <img src="images/parksandrec.jpg" alt="Parks and Recreation tv show poster">
-                        <div class="overlay">
-                            <figcaption>Parks and Recreation</figcaption>
-                        </div>
-                    </div>
-                </figure>
-                <ol>
-                    <li>Andy was only supposed to appear as a guest in the first season, but everybody liked Chris Pratt
-                        so much, he was promoted to series regular for season two.</li>
-                    <li>Amy Poehler, afraid they were going to turn Leslie Knope into a "female Michael Scott,"
-                        requested that starting in season 2, they show her character to be talented and successful at
-                        her job, with the humor coming from her quirky behavior and eager enthusiasm. The writers
-                        listened and went that route starting in season 2.</li>
-                    <li>Nick Offerman originally auditioned for the role of Mark Brendanawicz before being cast as Ron
-                        Swanson.</li>
-                </ol>
-            </section>
-            <section id="maintv3">
-                <figure class="divtitle">
-                    <div>
-                        <img src="images/vmars.jpg" alt="Veronica Mars tv show poster">
-                        <div class="overlay">
-                            <figcaption>Veronica Mars</figcaption>
-                        </div>
-                    </div>
-                </figure>
-                <ol>
-                    <li>Alyson Hannigan and Charisma Carpenter appeared on Buffy the Vampire Slayer (1997). "Buffy"
-                        Creator Joss Whedon, a declared fan of this show, also had a cameo in an episode.</li>
-                    <li>The only characters that appeared in all of the episodes were Veronica (Kristen Bell) and Keith
-                        Mars (Enrico Colantoni).</li>
-                    <li>Paul Rudd was originally considered to play Vinnie Van Lowe.</li>
-                </ol>
-            </section>
-            <a href="tv.html"><img src="images/rightarrow.png" alt="arrow pointing right" id="rightarrow"></a>
-        </div>
-        <blockquote>"So anyways, let's get down to the nitty gritty."<br> ~Nacho Libre</blockquote>
-    </main>
-    <footer>
-        <div id="footdiv">
-            <div id="left">
-                <ul>
-                    <li>Contact us!</li>
-                    <li>520-254-2354</li>
-                    <li><a href="mailto:tvmovietidbits@gmail.com">tvmovietidbits@gmail.com</a></li>
-                    <li>
-                        <address>6532 E. Broadway Tucson, AZ 85710</address>
-                    </li>
-                </ul>
+    <h2>Your go-to place for fun media facts!</h2>
+    <nav>
+      <ul id="navul">
+        <li><a href="index.html">Home</a></li>
+        <li class="current"><a href="tv.html">TV</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="searchbar">
+    <input type="search" placeholder="Search..." />
+    <input type="image" src="images/searchbutton.png" alt="Submit" />
+    <!--<input type="submit" value="Search">-->
+  </div>
+  <main>
+    <h1 id="tvhead">TV Shows</h1>
+    <div id="tvMain">
+      <img src="images/leftarrow.png" alt="arrow pointing left" id="leftarrow" onclick="myFunction(left)" />
+
+      <div id="set1" style=" display: grid;">
+        <section id="maintv1">
+          <figure class="divtitle">
+            <div>
+              <img src="images/criminalminds.jpg" alt="Criminal Minds tv show poster" />
+              <div class="overlay">
+                <p>Criminal Minds</p>
+              </div>
             </div>
-            <div id="right">
-                <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/practice/index.html">Practice</a></li>
-                    <li><a href="/styleguide/index.html">Style Guide</a></li>
-                    <li>&copy;TV, Movie Tidbits Inc.</li>
-                </ul>
+          </figure>
+          <ul>
+            <li>
+              The character "Penelope Garcia" was supposed to be in only one
+              episode, but she tested so positively that she was added to the
+              main cast.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              Matthew Gray Gubler does not wear matching socks, because he
+              thinks it's unlucky. In a few of the episodes, you can see his
+              mismatched socks.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              J.J.'s children are played by A.J. Cook's actual children,
+              Mekhai Andersen and Phoenix Anderson. Thomas Gibson's son Travis
+              Gibson appeared in an episode that he directed. Joe Mantegna's
+              daughter Gia Mantegna made a few guest appearances.
+            </li>
+          </ul>
+        </section>
+        <section id="maintv2">
+          <figure class="divtitle">
+            <div>
+              <img src="images/parksandrec.jpg" alt="Parks and Recreation tv show poster" />
+              <div class="overlay">
+                <p>Parks and Rec</p>
+              </div>
             </div>
-        </div>
-    </footer>
+          </figure>
+          <ul>
+            <li>
+              Andy was only supposed to appear as a guest in the first season,
+              but everybody liked Chris Pratt so much, he was promoted to
+              series regular for season two.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              Amy Poehler, afraid they were going to turn Leslie Knope into a
+              "female Michael Scott," requested that starting in season 2,
+              they show her character to be talented and successful at her
+              job, with the humor coming from her quirky behavior and eager
+              enthusiasm. The writers listened and went that route starting in
+              season 2.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              Nick Offerman originally auditioned for the rule of Mark
+              Brendanawicz before being cast as Ron Swanson.
+            </li>
+          </ul>
+        </section>
+        <section id="maintv3">
+          <figure class="divtitle">
+            <div>
+              <img src="images/vmars.jpg" alt="Veronica Mars tv show poster" />
+              <div class="overlay">
+                <p>Veronica Mars</p>
+              </div>
+            </div>
+          </figure>
+          <ul>
+            <li>
+              Alyson Hannigan and Charisma Carpenter appeared on Buffy the
+              Vampire Slayer (1997). "Buffy" Creator Joss Whedon, a declared
+              fan of this show, also had a cameo in an episode.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              The only characters that appeared in all of the episodes were
+              Veronica (Kristen Bell) and Keith Mars (Enrico Colantoni).
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              Paul Rudd was originally considered to play Vinnie Van Lowe.
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div id="set2" style=" display: none;">
+        <section id="maintv4">
+          <figure class="divtitle">
+            <div>
+              <img src="images/rands.jpg" alt="Rizzoli and Isles tv show poster" />
+              <div class="overlay">
+                <p>Rizzoli & Isles</p>
+              </div>
+            </div>
+          </figure>
+          <ul>
+            <li>
+              When Maura tells Jane that she might "move to Maine and write mystery novels" she is referring to Tess
+              Gerritsen the author of the novels that Rizzoli and Isles is based upon.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              One of the Cops was asked if he went to University and he answered "No, but I've seen Animal House a few
+              times" the actor had played D-day in Animal house.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              In 4x07, "All for One," Angie Harmon had injured her ankle on set during shooting, so the injury had to be
+              written in to the show, including in the next few episodes.
+            </li>
+          </ul>
+        </section>
+        <section id="maintv5">
+          <figure class="divtitle">
+            <div>
+              <img src="images/wynonnaearp.jpg" alt="Wynonna Earp tv show poster" />
+              <div class="overlay">
+                <p>Wyn-<br>onna Earp</p>
+              </div>
+            </div>
+          </figure>
+          <ul>
+            <li>Some of the characters didn't exist originally in the comic books (like Nicule Haught and
+              Waverly Earp), but Emily Andras (the creator) decided to add them to the story. Nicule
+              debuted this year ((2016) issue #8) and Waverly is set to debut soon.</li>
+            <li>
+              <hr>
+            </li>
+            <li>Wyatt Earp had no children of his own but had four common law wives.</li>
+            <li>
+              <hr>
+            </li>
+            <li>Wynonna's badge number is 1297. These numbers might have connection to Wyatt Earp who died
+              in January 1929 and "the seven" who are referred to through out the series.</li>
+          </ul>
+        </section>
+        <section id="maintv6">
+          <figure class="divtitle">
+            <div>
+              <img src="images/boymeetsworld.jpg" alt="Boy Meets World tv show poster" />
+              <div class="overlay">
+                <p>Boy Meets World</p>
+              </div>
+            </div>
+          </figure>
+          <ul>
+            <li>
+              Despite having hundreds of kids sign up to audition for the part of Shawn, Rider Strong was the first
+              actor that producer Michael Jacobs saw, and the last.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              Danielle Fishel claims that producer Michael Jacobs named her character after Topanga Canyon in Los
+              Angeles. Jacobs was driving past that location, when production called and asked for a name for the
+              character. Jacobs admitted that if he drove any further when the call came, he would have named the
+              character Canoga.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              John Adams High School, where much of the show is filmed, was also used in sitcoms and movies like, The
+              Wonder Years, Raiders of the Lost Ark, Pretty In Pink, and Transformers.
+            </li>
+          </ul>
+        </section>
+      </div>
+
+      <div id="set3" style=" display: none;">
+        <section id="maintv7">
+          <figure class="divtitle">
+            <div>
+              <img src="images/ninja warrior.jpg" alt="American Ninja Warrior tv show poster" />
+              <div class="overlay">
+                <p>American Ninja Warrior</p>
+              </div>
+            </div>
+          </figure>
+          <ul>
+            <li>
+              Jessie Graff is the most accomplished female competitor to ever appear on the show. In Season 8 she
+              finished stage 1 to become the only woman to ever do so.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              Geoff Britten and Isaac Caldiero became the first ever American Ninja Warriors in the season 7 finale.
+              Caldiero took home the $1,000,000 prize as he finished stage 4 with a faster time than Britten.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              American Ninja Warrior (2009) was nominated for the 2018 Emmy Award in the Outstanding Reality Competition
+              Series category, but lost to RuPaul's Drag Race (2009).
+            </li>
+          </ul>
+        </section>
+        <section id="maintv8">
+          <figure class="divtitle">
+            <div>
+              <img src="images/avatar.jpg" alt="Avatar: The Last Airbender tv show poster" />
+              <div class="overlay">
+                <p>Avatar: The Last Airbender</p>
+              </div>
+            </div>
+          </figure>
+          <ul>
+            <li>
+              The "Cabbage Man" was not originally meant to be a recurring character, but due to the fans' response and
+              the writers finding it so comedic, the Cabbage Man became a running gag throughout the series.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              Almost all of the animals in the show are a combination of two animals. For example, Appa is half bison,
+              half manatee and Momo is half bat, half lemur, except Bosco who is a full bear, and said to be weird that
+              he is only a bear, and Miyuki the cat that was the pet of the old herbalist.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              The symbols of the four nations that are written in the map of the avatar world has a literal meaning in
+              Chinese calligraphy. For example, the symbol of water is joined with another that means virtue; for the
+              one of earth, it means strong; for fire, it means fierce, and finally for of air, it means peaceful.
+            </li>
+          </ul>
+        </section>
+        <section id="maintv9">
+          <figure class="divtitle">
+            <div>
+              <img src="images/castle.jpg" alt="Castle tv show poster" />
+              <div class="overlay">
+                <p>Castle</p>
+              </div>
+            </div>
+          </figure>
+          <ul>
+            <li>
+              Detective Kevin Ryan (Seamus Dever) could be seen carrying a copy of one of Castle's books at least once
+              in every episode.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              Nathan Fillion (Richard Castle) and Darby Stanchfield (Meredith) play characters who were previously
+              married to one another. In the movie Waitress (2007), they played husband and wife.
+            </li>
+            <li>
+              <hr>
+            </li>
+            <li>
+              When he's stressed, Castle has a subconscious habit of leaning to the left.
+            </li>
+          </ul>
+        </section>
+      </div>
+      <img src="images/rightarrow.png" alt="arrow pointing right" id="rightarrow" onclick="myFunction(right)" />
+    </div>
+    <blockquote>
+      "So anyways, let's get down to the nitty gritty."<br />
+      ~Nacho Libre
+    </blockquote>
+  </main>
+  <footer>
+    <div id="footdiv">
+      <div id="left">
+        <ul>
+          <li>Contact us!</li>
+          <li>520-254-2354</li>
+          <li>
+            <a href="mailto:tvmovietidbits@gmail.com">tvmovietidbits@gmail.com</a>
+          </li>
+          <li>
+            <address>6532 E. Broadway Tucson, AZ 85710</address>
+          </li>
+        </ul>
+      </div>
+      <div id="right">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/practice/index.html">Practice</a></li>
+          <li><a href="/styleguide/index.html">Style Guide</a></li>
+          <li>&copy;TV, Movie Tidbits Inc.</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

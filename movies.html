@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>TV, Movie Tidbits | Movies</title>
     <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
-
+    <script src="display.js"></script>
 </head>
 
 <body>
@@ -34,61 +34,243 @@
     <main>
         <h1 id="moviehead">Movies</h1>
         <div id="moviesMain">
-            <a href="movies.html"><img src="images/leftarrow.png" alt="arrow pointing left" id="leftarrow"></a>
-            <section id="mainmovie1">
-                <figure class="divtitle">
-                    <div>
-                        <img src="images/stardust.jpg" alt="Stardust movie poster">
-                        <div class="overlay">
-                            <figcaption>Stardust</figcaption>
+            <img src="images/leftarrow.png" alt="arrow pointing left" id="leftarrow" onclick="myFunction(left)" />
+            <div id="set1" style=" display: grid;">
+                <section id="mainmovie1">
+                    <figure class="divtitle">
+                        <div>
+                            <img src="images/stardust.jpg" alt="Stardust movie poster">
+                            <div class="overlay">
+                                <p>Stardust</p>
+                            </div>
                         </div>
-                    </div>
-                </figure>
-                <ol>
-                    <li>All of the princes wear clothing with a pattern spelling out their number in Roman numerals,
-                        composed by smaller Arabic numerals.</li>
-                    <li>Septimus' musical theme is written in 7/8 time.</li>
-                    <li>Michelle Pfeiffer was Matthew Vaughn's only choice for the role of the Witch Queen. He had
-                        been a die-hard fan since first seeing her in Grease 2(1982).</li>
-                </ol>
-            </section>
-            <section id="mainmovie2">
-                <figure class="divtitle">
-                    <div>
-                        <img src="images/onesmallhitch.jpg" alt="One Small Hitch movie poster">
-                        <div class="overlay">
-                            <figcaption>One Small Hitch</figcaption>
+                    </figure>
+                    <ul>
+                        <li>All of the princes wear clothing with a pattern spelling out their number in Roman numerals,
+                            composed by smaller Arabic numerals.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Septimus' musical theme is written in 7/8 time.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Michelle Pfeiffer was Matthew Vaughn's only choice for the rule of the Witch Queen. He had
+                            been a die-hard fan since first seeing her in Grease 2(1982).</li>
+                    </ul>
+                </section>
+                <section id="mainmovie2">
+                    <figure class="divtitle">
+                        <div>
+                            <img src="images/onesmallhitch.jpg" alt="One Small Hitch movie poster">
+                            <div class="overlay">
+                                <p>One Small Hitch</p>
+                            </div>
                         </div>
-                    </div>
-                </figure>
-                <ol>
-                    <li>John Burgess won the "Rising Star" award at the Naples International Film Festival for One
-                        Small Hitch.</li>
-                    <li>The producers licensed 16 seconds of "Sixteen Candles" for when Molly Mahoney is watching TV
-                        as an homage to John Hughes.</li>
-                    <li>John Burgess won the "Rising Star" award at the Naples International Film Festival for One
-                        Small Hitch.</li>
-                </ol>
-            </section>
-            <section id="mainmovie3">
-                <figure class="divtitle">
-                    <div>
-                        <img src="images/pitchperfect.jpg" alt="Pitch Perfect movie poster">
-                        <div class="overlay">
-                            <figcaption>Pitch Perfect</figcaption>
+                    </figure>
+                    <ul>
+                        <li>John Burgess won the "Rising Star" award at the Naples International Film Festival for One
+                            Small Hitch.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>The producers licensed 16 seconds of "Sixteen Candles" for when Molly Mahoney is watching TV
+                            as an homage to John Hughes.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>John Burgess won the "Rising Star" award at the Naples International Film Festival for One
+                            Small Hitch.</li>
+                    </ul>
+                </section>
+                <section id="mainmovie3">
+                    <figure class="divtitle">
+                        <div>
+                            <img src="images/pitchperfect.jpg" alt="Pitch Perfect movie poster">
+                            <div class="overlay">
+                                <p>Pitch Perfect</p>
+                            </div>
                         </div>
-                    </div>
-                </figure>
-                <ol>
-                    <li>During the Riff-Off, Ester Dean sings S&M, which was co-written by her.</li>
-                    <li>Adam Devine (Bumper) accidentally hit a cameraman with one of the burritos he had to throw out
-                        of the bus.</li>
-                    <li>Kelley Jakle (Jessica) was an actual ICCA-winner in 2008 and 2010 with the USC SoCal Vocals. Ben
-                        Bram, who worked in the music department of the film, also won the ICCAs with the 2008 and 2010
-                        USC SoCal Vocals.</li>
-                </ol>
-            </section>
-            <a href="movies.html"><img src="images/rightarrow.png" alt="arrow pointing right" id="rightarrow"></a>
+                    </figure>
+                    <ul>
+                        <li>During the Riff-Off, Ester Dean sings S&M, which was co-written by her.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Adam Devine (Bumper) accidentally hit a cameraman with one of the burritos he had to throw
+                            out
+                            of the bus.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Kelley Jakle (Jessica) was an actual ICCA-winner in 2008 and 2010 with the USC SoCal Vocals.
+                            Ben
+                            Bram, who worked in the music department of the film, also won the ICCAs with the 2008 and
+                            2010
+                            USC SoCal Vocals.</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div id="set2" style=" display: none;">
+                <section id="mainmovie4">
+                    <figure class="divtitle">
+                        <div>
+                            <img src="images/hp7pt2.jpg"
+                                alt="Harry Potter and the Deathly Hallows: Part 2 movie poster">
+                            <div class="overlay">
+                                <p>Harry Potter and the Deathly Hallows: Pt. 2</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <ul>
+                        <li>Daniel Radcliffe reportedly broke eighty wands throughout the franchise, because he used
+                            them as drumsticks.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Most of the events in this film, from the raid on Gringotts to the Battle of Hogwarts, take
+                            place over the course of a single day.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Of the three main performers, Rupert Grint was the only one who never seriously considered
+                            leaving the franchise at some point. Daniel Radcliffe thought about leaving after the third
+                            film, and Emma Watson after the fifth. Neither did depart, however, and all three stayed on
+                            for all eight films.</li>
+                    </ul>
+                </section>
+                <section id="mainmovie5">
+                    <figure class="divtitle">
+                        <div>
+                            <img src="images/NightMuseumSmith.jpg"
+                                alt="Night at the Museum: Battle of the Smithsonian movie poster">
+                            <div class="overlay">
+                                <p>Night at the Museum 2</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <ul>
+                        <li>The first movie filmed in the Smithsonian Institution.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Amelia (Amy Adams) says in the movie that she became a pilot for "the fun of it", the title
+                            of a 1932 autobiography by the real Amelia Earhart.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Hank Azaria filmed test scenes (some of which are on the DVD) of his character Kahmunrah
+                            with various accents including American Southerner (from Alabama) and English Cockney,
+                            before settling on a Boris Karloff impersonation.</li>
+                    </ul>
+                </section>
+                <section id="mainmovie6">
+                    <figure class="divtitle">
+                        <div>
+                            <img src="images/captainmarvel.jpg" alt="Captain Marvel movie poster">
+                            <div class="overlay">
+                                <p>Captain Marvel</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <ul>
+                        <li>When Stan Lee makes his cameo, he is seen reading the script for Kevin Smith's Mallrats
+                            (1995) and reciting the line, "Trust me true believer". As revealed on Smith's YouTube page,
+                            Stan's health was in decline and he could not muster his trademark enthusiasm so the
+                            producers looped in Lee's unused audio from Mallrats.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Brie Larson is allergic to cats, so her scenes involving Goose were filmed with a puppet or
+                            computer-generated VFX.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>The name "Captain Marvel" is not used in the film until the closing credits.</li>
+                    </ul>
+                </section>
+            </div>
+            <div id="set3" style=" display: none;">
+                <section id="mainmovie7">
+                    <figure class="divtitle">
+                        <div>
+                            <img src="images/forceawakens.jpg"
+                                alt="Star Wars: Episode VII - The Force Awakens movie poster">
+                            <div class="overlay">
+                                <p>Star Wars: The Force Awakens</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <ul>
+                        <li>When Finn and Rey ask Han if he is THE Han Solo, he replies, "I used to be," which is a
+                            reply Ford himself regularly uses when fans ask if he is Harrison Ford.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>John Boyega was so nervous and frightened at the prospect of not getting the rule that he
+                            didn't tell his parents that he had been cast until after a cast photo was posted online by
+                            the official Star Wars Twitter page.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>Only time Harrison Ford has received top billing in a Star Wars film, making him the first
+                            non-Jedi character to be credited first.</li>
+                    </ul>
+                </section>
+                <section id="mainmovie8">
+                    <figure class="divtitle">
+                        <div>
+                            <img src="images/heavyweights.jpg" alt="Heavyweights movie poster">
+                            <div class="overlay">
+                                <p>Heavy-<br>weights</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <ul>
+                        <li>While Ben Stiller played the parts of both Tony Perkins and his father, the Bushkins were
+                            played by his actual parents, Jerry Stiller and Anne Meara.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>As part of his first date with his eventual wife, Judd Apatow tried to impress Leslie Mann
+                            by showing her this film.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>As the kids are getting off the Camp Hope bus when first arriving, you can see the Max.
+                            Capacity is 25. The 25 is scratched over and a "23" is written above it.</li>
+                    </ul>
+                </section>
+                <section id="mainmovie9">
+                    <figure class="divtitle">
+                        <div>
+                            <img src="images/hercules.jpg" alt="Hercules movie poster">
+                            <div class="overlay">
+                                <p>Hercules</p>
+                            </div>
+                        </div>
+                    </figure>
+                    <ul>
+                        <li>Phil's physical appearance was partly inspired by Danny DeVito's.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>On his way to Thebes, Hercules meets Megara after he saves her from the River Guardian,
+                            Nessos. While this is not the story of how Hercules came to know Megara in Greek legend, it
+                            IS (almost exactly) how he came to know his second wife, Deianira.</li>
+                        <li>
+                            <hr>
+                        </li>
+                        <li>The rule of Hades is one of James Woods' all-time favorite characters. So much so, any time
+                            Disney needs him to reprise the character for any cartoon show and video game, such as
+                            Hercules: The Series or Kingdom Hearts, he has agreed to do so. When this film was about to
+                            go over-budget, he offered to refund his salary and finish the film for free. Disney decided
+                            against this, and finished the film anyway.</li>
+                    </ul>
+                </section>
+            </div>
+            <img src="images/rightarrow.png" alt="arrow pointing right" id="rightarrow" onclick="myFunction(right)" />
         </div>
         <blockquote>"So anyways, let's get down to the nitty gritty."<br> ~Nacho Libre</blockquote>
     </main>

@@ -34,7 +34,7 @@ header {
   border-radius: 20px;
 }
 
-ul {
+nav ul {
   list-style-type: none;
   padding: 0;
 }
@@ -123,8 +123,9 @@ input[type="image"]:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 2em;
-  width: 90%;
+  width: 100%;
 }
+
 
 #movies {
   grid-column: 1;
@@ -167,16 +168,24 @@ input[type="image"]:hover {
   grid-column: 1;
 }
 
-#mainhome ol {
-  font-size: 1.2em;
+#mainhome ul {
+  font-size: 1.25em;
   padding: 0.5em;
-  padding-left: 1em;
+  padding-left: 0em;
   grid-column: 2;
   overflow: scroll;
+  list-style-type: none;
 }
 
-#mainhome ol li {
+#mainhome ul li {
   padding-bottom: 0.2em;
+}
+
+#mainhome ul li hr {
+  margin: 0;
+  background-color: #eb6558;
+  border: none;
+  height: 0.25em;
 }
 
 blockquote {
@@ -204,6 +213,10 @@ footer {
   grid-template-columns: 1fr 1fr;
   column-gap: 1em;
   width: 70%;
+}
+
+#footdiv ul {
+  list-style-type: none;
 }
 
 #footdiv li {
@@ -296,8 +309,9 @@ figure.divtitle div:hover .overlay {
   display: block;
 }
 
-figure.divtitle div div.overlay figcaption {
-  padding: 0.25em;
+figure.divtitle div div.overlay p {
+  padding: 0.4em;
+  margin: 0;
 }
 
 div.aboutmediatitle {
@@ -381,11 +395,13 @@ legend {
   display: table-cell;
   padding: 0.3em;
 }
+
 #contactform input,
 #contactform textarea {
   border-radius: 10px;
   width: 100%;
 }
+
 #contactform label {
   vertical-align: top;
   display: table-cell;
@@ -446,11 +462,30 @@ input#consubmit:hover {
 
 #moviesMain,
 #tvMain {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 0.5fr 2fr 2fr 2fr 0.5fr;
-  grid-gap: 1em;
+  grid-gap: 1em;*/
   align-items: center;
   margin: 2em auto;
+  display: flex;
+}
+
+#set1 {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 1em;
+}
+
+#set2 {
+  display: none;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 1em;
+}
+
+#set3 {
+  display: none;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-gap: 1em;
 }
 
 #moviesMain section,
@@ -477,19 +512,36 @@ input#consubmit:hover {
   box-shadow: 0.5em 0.5em 0.5em #eb6558;
 }
 
-#moviesMain figcaption,
-#tvMain figcaption {
+#moviesMain figure.divtitle div div.overlay p,
+#tvMain figure.divtitle div div.overlay p {
   font-size: 1.15em;
+  padding: .2em;
+  margin: 0;
 }
 
-#moviesMain section ol,
-#tvMain section ol {
-  padding: 0.5em;
-  padding-left: 1.5em;
+#moviesMain section ul,
+#tvMain section ul {
+  margin-top: 0;
+  padding: 0.35em;
   text-align: left;
   overflow: scroll;
   font-weight: bold;
   grid-row: 2;
+  list-style-type: none;
+  font-size: 1.15em;
+}
+
+#moviesMain section ul li hr,
+#tvMain section ul li hr {
+  margin: 0;
+  background-color: #eb6558;
+  border: none;
+  height: 0.25em;
+}
+
+ul li {
+
+  padding: .2em;
 }
 
 #moviehead,
@@ -511,9 +563,11 @@ input#consubmit:hover {
 
 #leftarrow,
 #rightarrow {
+  width: 50%;
   background-color: #eb6558;
   padding: 0.5em 1em;
   border-radius: 50%;
+  margin: 1em;
 }
 
 #leftarrow:hover,
