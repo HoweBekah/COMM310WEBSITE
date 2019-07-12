@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Varela+Round&display=swap");
 
 html {
-  background-color: #01334A;
+  background-color: #01334a;
   color: #fff7cc;
 }
 
@@ -30,7 +30,7 @@ header {
 
 #logo {
   margin-top: 1.5em;
-  border: 1em solid #01334A;
+  border: 1em solid #01334a;
   border-radius: 20px;
 }
 
@@ -52,7 +52,7 @@ nav {
 }
 
 #navul li.current {
-  background-color: #01334A;
+  background-color: #01334a;
 }
 
 header h2 {
@@ -70,7 +70,7 @@ header h2 {
 #navul li {
   float: left;
   padding: 0.65em 1em;
-  border-right: 0.25em solid #01334A;
+  border-right: 0.25em solid #01334a;
 }
 
 #navul li:hover {
@@ -281,7 +281,7 @@ figure.divtitle div img {
 }
 
 figure.divtitle div .overlay {
-  background-color: #01334A;
+  background-color: #01334a;
   color: #fff7cc;
   position: absolute;
   top: 0em;
@@ -297,7 +297,7 @@ figure.divtitle div:hover .overlay {
 }
 
 figure.divtitle div div.overlay figcaption {
-  padding: .25em;
+  padding: 0.25em;
 }
 
 div.aboutmediatitle {
@@ -350,25 +350,25 @@ div.aboutmediatitle h4 {
 #contactform {
   text-align: center;
   background-color: #eb6558;
-  border-radius: .5em;
+  border-radius: 0.5em;
   width: 65%;
   margin: auto;
   font-size: 1.25em;
   display: table;
   margin: 2em auto;
-
 }
 
 fieldset {
   border: none;
-
+  margin: 0.5em;
+  padding-left: 0;
 }
 
 legend {
+  width: 100%;
   text-align: center;
   text-decoration: underline dashed #1c1c1c;
-  font-family: "Nanum Pen Script",
-    cursive;
+  font-family: "Nanum Pen Script", cursive;
   font-size: 2.35em;
   font-weight: bold;
   padding-bottom: 0;
@@ -376,13 +376,16 @@ legend {
 }
 
 #contactform .textinput {
-  margin: .3em auto;
+  margin: 0.3em auto;
   justify-self: right;
   display: table-cell;
-  padding: .3em;
+  padding: 0.3em;
 }
-
-
+#contactform input,
+#contactform textarea {
+  border-radius: 10px;
+  width: 100%;
+}
 #contactform label {
   vertical-align: top;
   display: table-cell;
@@ -394,10 +397,12 @@ input#consubmit {
   background-color: #fff7cc;
   color: #0699dd;
   border: none;
-  box-shadow: .2em .2em .2em #1c1c1c;
-  margin-bottom: .75em;
-  padding: .1em .25em;
+  box-shadow: 0.2em 0.2em 0.2em #1c1c1c;
+  margin-bottom: 0.75em;
+  padding: 0.15em 0.25em 0.15em 0.25em;
   cursor: pointer;
+  border-radius: 10px;
+  width: initial;
 }
 
 input#consubmit:hover {
@@ -413,26 +418,25 @@ input#consubmit:hover {
 #warn {
   text-align: center;
   margin-top: 0;
-  font-size: .75em;
+  font-size: 0.75em;
   font-weight: lighter;
 }
 
 #thanks {
-  color: #01334A;
+  color: #01334a;
   background-color: #fff7cc;
-  border-radius: .5em;
+  border-radius: 0.5em;
   display: inline-block;
-  padding: .75em;
+  padding: 0.75em;
   margin: 2em auto;
 }
 
 #thanks:hover {
-  box-shadow: .5em .5em .5em #0699dd;
+  box-shadow: 0.5em 0.5em 0.5em #0699dd;
 }
 
 #thanks h1 {
   margin-bottom: 0;
-
 }
 
 #thanks h2 {
@@ -443,7 +447,7 @@ input#consubmit:hover {
 #moviesMain,
 #tvMain {
   display: grid;
-  grid-template-columns: .5fr 2fr 2fr 2fr .5fr;
+  grid-template-columns: 0.5fr 2fr 2fr 2fr 0.5fr;
   grid-gap: 1em;
   align-items: center;
   margin: 2em auto;
@@ -456,13 +460,13 @@ input#consubmit:hover {
   background-color: #fff7cc;
   color: #0699dd;
   border-radius: 1em;
-  padding: .7em;
+  padding: 0.7em;
   height: 33em;
 }
 
 #moviesMain figure,
 #tvMain figure {
-  border: .5em solid #eb6558;
+  border: 0.5em solid #eb6558;
   border-radius: 10px;
   background-color: #eb6558;
   grid-row: 1;
@@ -470,25 +474,23 @@ input#consubmit:hover {
 
 #moviesMain section:hover,
 #tvMain section:hover {
-  box-shadow: .5em .5em .5em #eb6558;
+  box-shadow: 0.5em 0.5em 0.5em #eb6558;
 }
 
 #moviesMain figcaption,
 #tvMain figcaption {
-
   font-size: 1.15em;
 }
 
 #moviesMain section ol,
 #tvMain section ol {
-  padding: .5em;
+  padding: 0.5em;
   padding-left: 1.5em;
   text-align: left;
   overflow: scroll;
   font-weight: bold;
   grid-row: 2;
 }
-
 
 #moviehead,
 #tvhead {
@@ -510,11 +512,11 @@ input#consubmit:hover {
 #leftarrow,
 #rightarrow {
   background-color: #eb6558;
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border-radius: 50%;
 }
 
 #leftarrow:hover,
 #rightarrow:hover {
-  box-shadow: .25em .25em .5em #fff7cc;
+  box-shadow: 0.25em 0.25em 0.5em #fff7cc;
 }
