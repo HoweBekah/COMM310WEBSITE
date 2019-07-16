@@ -26,12 +26,23 @@ header {
   color: #0699dd;
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
+  margin-bottom: 3em;
+}
+
+#top {
+  width: 65%;
+  display: grid;
+  grid-template-columns: .75fr 3fr;
+  margin-left: 8.5em;
+  text-align: left;
 }
 
 #logo {
+  grid-column: 1;
   margin-top: 1.5em;
   border: 1em solid #01334a;
   border-radius: 20px;
+
 }
 
 nav ul {
@@ -56,8 +67,13 @@ nav {
 }
 
 header h2 {
+  grid-column: 2;
+  color: #eb6558;
   margin-bottom: 0;
   margin-top: 0.5em;
+  margin-left: .5em;
+  align-self: flex-end;
+  font-size: 2em;
 }
 
 #navul {
@@ -312,6 +328,7 @@ figure.divtitle div:hover .overlay {
 figure.divtitle div div.overlay p {
   padding: 0.4em;
   margin: 0;
+  text-shadow: .2em .2em .2em #1c1c1c;
 }
 
 div.aboutmediatitle {
@@ -365,17 +382,18 @@ div.aboutmediatitle h4 {
   text-align: center;
   background-color: #eb6558;
   border-radius: 0.5em;
-  width: 65%;
-  margin: auto;
+  width: 70%;
   font-size: 1.25em;
   display: table;
   margin: 2em auto;
+  margin-top: 3.5em;
 }
 
 fieldset {
   border: none;
   margin: 0.5em;
   padding-left: 0;
+  margin-left: 1.75em;
 }
 
 legend {
