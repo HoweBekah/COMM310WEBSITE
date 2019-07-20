@@ -1,3 +1,23 @@
+/* ----------------------------------------------------- */
+/* --------- Typography: Heading & Body Copy ----------- */
+/* ----------------------------------------------------- */
+/* These are the font families of all the headings and body copy */
+
+@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Varela+Round&display=swap");
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nanum Pen Script", cursive;
+}
+
 /* --------------------------------------------- */
 /* --------- Branding: Color Palette ----------- */
 /* --------------------------------------------- */
@@ -18,25 +38,7 @@
   background-color: #01334A;
 }
 
-/* ----------------------------------------------------- */
-/* --------- Typography: Heading & Body Copy ----------- */
-/* ----------------------------------------------------- */
-/* These are the font families of all the headings and body copy */
 
-@import url("https://fonts.googleapis.com/css?family=Nanum+Pen+Script|Varela+Round&display=swap");
-
-body {
-  font-family: "Varela Round", sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Nanum Pen Script", cursive;
-}
 
 /* -------------------------------------------------- */
 /* --------- Navigation: Main & Secondary ----------- */
